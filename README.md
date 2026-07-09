@@ -1,5 +1,9 @@
 # A Computational Framework for Tracking Jargon, Style, and Multi-Dimensional Ad Hominem Rhetoric in Political Discourse
 
+## Data Availability
+The large datasets required to run this code are permanently archived on Zenodo:
+https://doi.org/10.5281/zenodo.21272501
+
 This repository contains an end-to-end computational linguistics and text-mining pipeline designed to track, classify, and analyze the rhetorical and stylistic evolution of political discourse over extended longitudinal timelines. 
 
 Operating at the intersection of **Computational Linguistics**, **Political Communication**, and **Machine Learning**, this project moves away from traditional monolithic text tracking. It introduces granular, multi-label classifications of *ad hominem* attacks, tracks shifts in individual vs. collective pronoun framing, measures lexical complexity, and uses machine learning to scale semantic categorization across large speech corpora.
