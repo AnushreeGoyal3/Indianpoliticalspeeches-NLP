@@ -1,16 +1,12 @@
 # A Computational Framework for Tracking Jargon, Style, and Multi-Dimensional Ad Hominem Rhetoric in Political Discourse
 
-## Data Availability
-The large datasets required to run this code are permanently archived on Zenodo:
-https://doi.org/10.5281/zenodo.21272501
-
 This repository contains an end-to-end computational linguistics and text-mining pipeline designed to track, classify, and analyze the rhetorical and stylistic evolution of political discourse over extended longitudinal timelines. 
 
 Operating at the intersection of **Computational Linguistics**, **Political Communication**, and **Machine Learning**, this project moves away from traditional monolithic text tracking. It introduces granular, multi-label classifications of *ad hominem* attacks, tracks shifts in individual vs. collective pronoun framing, measures lexical complexity, and uses machine learning to scale semantic categorization across large speech corpora.
 
 ---
 
-## ⚙️ Core Architecture & Project Foundations
+## Core Architecture & Project Foundations
 
 The project systematically resolves four primary challenges in computational political science through a modular python pipeline:
 
@@ -42,9 +38,9 @@ The project systematically resolves four primary challenges in computational pol
 
 ---
 
-## 📊 Empirical Discoveries & Data Hurdles
+## Empirical Discoveries & Data Hurdles
 
-As the machine learning architecture transitioned from basic binary classification to an advanced multi-label framework—where **10 cloned classifiers run in parallel** to track all attack dimensions simultaneously—a clear data hurdle was uncovered.
+As the machine learning architecture transitioned from basic binary classification to an advanced multi-label framework where **10 cloned classifiers run in parallel** to track all attack dimensions simultaneously a clear data hurdle was uncovered.
 
 ### The Data Sparsity & Imbalance Paradox
 
@@ -53,12 +49,12 @@ The multi-label evaluation report revealed very high F1-scores for categories li
 The cause of this drop-off is directly tied to the dataset's class distribution profile:
 
 * **The High-Support Triggers:** Keyword matching functions highly effectively on blunt, literal categories. Markers for family lineage or physical age are vocabulary-stable and highly recurring, providing ample training data for the model.
-* **The Sparse Classes:** More complex rhetorical attacks—like mocking an opponent or implying guilt by association—are often highly ironic, sarcastic, or syntactically complex. Because these structures avoid simple keywords, the rigid regex dictionary missed them, leaving categories starved with **only 1 or 2 positive samples** in the entire test split. 
+* **The Sparse Classes:** More complex rhetorical attacks like mocking an opponent or implying guilt by association—are often highly ironic, sarcastic, or syntactically complex. Because these structures avoid simple keywords, the rigid regex dictionary missed them, leaving categories starved with **only 1 or 2 positive samples** in the entire test split. 
 * **The Technical Conclusion:** A machine learning model cannot find a reliable mathematical boundary based on 1 or 2 samples. This data sparsity directly informs the next development milestone for this project.
 
 ---
 
-## 🚀 Repository Roadmap: Next Research Extensions
+## Repository Roadmap: Next Research Extensions
 
 To scale this pipeline into a high-impact, publication-grade research paper, development is moving toward three core extensions:
 
